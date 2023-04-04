@@ -4,37 +4,73 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Roboto Light", sans-serif;
     font-size: 16px;
     line-height: 1.5;
 }
 
-/* Header styles */
-header {
-    background-color: #fff;
+/*Top Row*/
+.topRow{
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
     align-items: center;
-    padding: 1rem;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 0;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 1em 1em 0.5em;
+}
+
+.leftElements{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.rightElements{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
 }
 
 .logo {
     display: flex;
-    flex-basis: 30%; /*grandezza di default dell'elemento*/
-    margin: auto;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%,-50%);
+    top: 5em;
+    width: 30%;
 
 }
-/* centering the image logo*/
+
 .logo img {
     max-width: 100%;
-    height: auto;
-    margin-inline: auto;
+}
+
+.stacked{
+    display: flex;
+    text-align: left;
+    margin: 0.5em;
+    flex-direction: column;
+}
+.signin{
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    margin: 0.5em;
+}
+.subButton{
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    margin: 0.5em;
+}
+
+/* Header styles */
+header {
+    background-color: #ffffff;
+    color: #000000;
 }
 
 nav {
@@ -82,15 +118,6 @@ nav a:hover {
     background-color: #0069d9;
 }
 
-.date {
-    display: flex;
-    flex-direction: column;
-    flex-basis: 100%;
-    text-align: left;
-    font-size: 0.8rem;
-    color: #999;
-}
-
 /* Main content styles */
 main {
     margin-top: 5rem;
@@ -120,16 +147,3 @@ article p {
     margin: 0;
 }
 
-.todayPaper{
-    font-weight: bold;
-}
-/*align all top row elements on the same line with even spacing*/
-.topRow{
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}

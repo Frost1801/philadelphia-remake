@@ -14,7 +14,6 @@ header {
     background-color: #fff;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     align-items: center;
     padding: 1rem;
     position: fixed;
@@ -26,7 +25,9 @@ header {
 }
 
 .logo {
-    flex-basis: 20%;
+    display: flex;
+    flex-basis: 30%; /*grandezza di default dell'elemento*/
+    margin: auto;
 
 }
 /* centering the image logo*/
@@ -64,8 +65,9 @@ nav a:hover {
 }
 
 .signin {
-    flex-basis: 100%;
+    display: flex;
     text-align: right;
+    flex-direction: row;
 }
 
 .signin a {
@@ -81,6 +83,8 @@ nav a:hover {
 }
 
 .date {
+    display: flex;
+    flex-direction: column;
     flex-basis: 100%;
     text-align: left;
     font-size: 0.8rem;
@@ -114,4 +118,18 @@ article h2 {
 
 article p {
     margin: 0;
+}
+
+.todayPaper{
+    font-weight: bold;
+}
+/*align all top row elements on the same line with even spacing*/
+.topRow{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }

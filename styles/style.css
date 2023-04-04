@@ -15,21 +15,24 @@ body {
     flex-direction: row;
     align-items: center;
     background-color: #ffffff;
-    color: #000000;;
-    padding-bottom: 1em;
+    color: #000000;
+    margin-top: 1em;
+    padding-bottom: 0em;
 }
 
 .leftElements{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding-left: 20em;
+    margin-left: 30em;
+    font-size: 70%;
 }
 .rightElements{
     display: flex;
     flex-direction: row;
-    align-items: flex-end;
-    padding-right: 20em;
+    align-items: flex-start;
+    margin-right: 20em;
+    font-size: 90%;
 }
 
 .logo {
@@ -38,6 +41,7 @@ body {
     left: 50%;
     right: 50%;
     transform: translate(-50%,-50%);
+    padding-top: 0.5em;
     top: 2.5em;
     width: 26%;
 
@@ -75,6 +79,22 @@ body {
 .promotion{
     margin: 0;
 }
+.bold{
+    font-weight: bold;
+}
+
+.icon-wrapper{
+    display: flex;
+    margin: 1em;
+    padding: 0;
+    width: 1%;
+}
+.icon-wrapper img{
+    max-height: 100%;
+    max-width: 100%;
+    float: left;
+}
+
 
 /* Header styles */
 header {
@@ -86,6 +106,8 @@ nav {
     flex-basis: 100%;
     text-align: center;
     margin: 0;
+    padding: 1em;
+    border-bottom: 1px solid black;
 }
 
 nav ul {
@@ -96,17 +118,14 @@ nav ul {
 
 nav li {
     display: inline-block;
-    margin: 0 1rem;
+    margin: 0 0.5rem;
+    font-size: 80%;
+    text-transform: uppercase
 }
 
 nav a {
     color: #333;
     text-decoration: none;
-    font-weight: bold;
-}
-
-nav a:hover {
-    color: #007bff;
 }
 
 .signin {

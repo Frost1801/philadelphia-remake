@@ -3,142 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive News Website</title>
+    <title>Philadelphia inquirer</title>
     <link rel="stylesheet" href="styles/style.css">
 </head>
+
+
 <body>
-<header>
-    <div class = "topRow">
-        <div class="leftElements">
-            <p class = "stacked">Tuesday, April 4, 2023</p>
-            <p class = "stacked bold">Today's paper</p>
-        </div>
-        <div class="logo">
+<!--Questa è la parte superiore della navigation bar-->
+<div id ="main_menu">
+    <div class = "logo">
+        <a href="">
             <img src="img/logo.svg" alt="logo">
-        </div>
-        <div class="rightElements">
-            <a href="#" class = signin>SIGN IN</a>
-            <a href="#">
-                <button class="subButton" role="button">
-                    <p class = "subscribe">SUBSCRIBE</p>
-                    <p class = "promotion">1$ for 4 months</p>
-                </button>
-            </a>
-        </div>
+        </a>
     </div>
-
-    <nav>
-        <div class="topicBar">
-            <ul class="topicsList">
-                <div class = "icons">
-                    <div class="icon-wrapper"><img src="img/hamburger.png" alt="hamburger">
-                        <img src="img/search.png" alt="search">
+    <div class="inner_main_menu">
+        <ul>
+            <li>
+                <div class = "left-elements">
+                    <div>Wednesday, April 5, 2023</div>
+                    <div ><a href="" id="today-paper">Today's Paper</a></div>
                 </div>
-                </div>
-                <div class = "newsTopics">
-                        <a href="#">News</a>
-                        <a href="#">Sports</a>
-                        <a href="#">Betting</a>
-                        <a href="#">Business</a>
-                        <a href="#">Opinion</a>
-                        <a href="#">Politics</a>
-                        <a href="#">Entertainment</a>
-                        <a href="#">Life</a>
-                        <a href="#">Food</a>
-                        <a href="#">Health</a>
-                        <a href="#">Real Estate</a>
-                        <a href="#">Obituaries</a>
-                        <a href="#">Jobs</a>
-                </div>
+            </li>
+            <li id = "sub-button">
+                <a href="" >
+                    <div>SUBSCRIBE</div>
+                    <div>1$ for 4 months</div>
+                </a>
+            </li>
+            <li id = "signin"><a href="" >SIGN IN</a></li>
 
-            </ul>
-
-        </div>
-    </nav>
-</header>
-<main>
-    <section class="row">
-        <article>
-            <h2>Article 1</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </article>
-        <article>
-            <h2>Article 2</h2>
-            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </article>
-        <article>
-            <h2>Article 3</h2>
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-        </article>
-    </section>
-    <section class="row">
-        <article>
-            <h2>Article 4</h2>
-            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </article>
-        <article>
-            <h2>Article 5</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </article>
-        <article>
-            <h2>Article 6</h2>
-            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </article>
-    </section>
-    <section class="row">
-        <article>
-            <h2>Article 7</h2>
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-        </article>
-        <article>
-            <h2>Article 8</h2>
-            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </article>
-        <article>
-            <h2>Article 9</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </article>
-        <article>
-            <h2>Article 1</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </article>
-        <article>
-            <h2>Article 2</h2>
-            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </article>
-        <article>
-            <h2>Article 3</h2>
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-        </article>
-    </section>
-    <section class="row">
-        <article>
-            <h2>Article 4</h2>
-            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </article>
-        <article>
-            <h2>Article 5</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </article>
-        <article>
-            <h2>Article 6</h2>
-            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </article>
-    </section>
-    <section class="row">
-        <article>
-            <h2>Article 7</h2>
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-        </article>
-        <article>
-            <h2>Article 8</h2>
-            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </article>
-        <article>
-            <h2>Article 9</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </article>
-    </section>
-</main>
+        </ul>
+    </div>
+</div>
 </body>
 </html>

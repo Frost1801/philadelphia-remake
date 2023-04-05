@@ -1,139 +1,66 @@
-/* Global styles */
-* {
-    box-sizing: border-box;
+body{
+    background:none repeat scroll 0 0;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.5em;
+}
+.inner_main_menu{
+    margin: 0 auto;
+    width: 1170px;
 }
 
-body {
-    font-family: "Roboto Light", sans-serif;
-    font-size: 16px;
+.inner_main_menu ul{
+    /*rimuovo margine, padding e */
+    margin: 0;
+    list-style: none;
+    text-align: right;
+    padding: 1em 0 0;
+    padding-inline-start: 0;
 }
-
-/*Top Row*/
-.topRow{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    align-items: center;
-    background-color: #ffffff;
-    color: #000000;
-    margin-top: 1em;
+.inner_main_menu ul li{
+    float: none;
+    display: inline-block;
 }
-
-.leftElements{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-left: 30em;
-    font-size: 70%;
+/*spostiamo gli elementi sul lato corretto*/
+/*Data di oggi e paper*/
+.inner_main_menu ul li:nth-child(1){
+    text-align: left;
+    float: left;
 }
-.rightElements{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    margin-right: 20em;
-    font-size: 90%;
+/*Bottone subscribe*/
+.inner_main_menu ul li:nth-child(2){
+    text-align: center;
+    float: right;
+    background-color: red
 }
-
-.logo {
-    display: flex;
+/*bottone sign in*/
+.inner_main_menu ul li:nth-child(3){
+    float: right;
+}
+.inner_main_menu ul li a{
+    display: block;
+    /*rimuove le sottolineature ai link*/
+    text-decoration: none;
+    padding: 0.5em;
+}
+#main_menu{
+    width: 100%;
+    position: relative;
+}
+.logo{
+    width: 500px;
+    height: 500px;
     position: absolute;
     left: 50%;
-    right: 50%;
-    transform: translate(-50%,-50%);
+    top: 0;
+    content: "";
+    margin-left: -250px;
     padding-top: 0.5em;
-    top: 2.5em;
-    width: 26%;
-}
-
-.logo img {
-    max-width: 100%;
-}
-
-.stacked{
-    display: flex;
-    text-align: left;
-    flex-direction: column;
-    margin: 0.1em;
-}
-.signin{
     text-align: center;
-    font-weight: bold;
-    color: black;
-    margin: auto;
 }
-.subButton{
-    background: rgb(176, 204, 221);
-    border: 1px solid rgb(176, 204, 221);
-    color: rgb(0, 0, 0);
-    margin-left: 1em;
-    padding: 0.5em 3em;
+#today-paper{
+    padding: 0;
 }
-
-.subscribe{
-    font-weight: bold;
-    font-size: 120%;
-    margin: 0;
+#sub-button{
+    margin-top: -0.5em;
 }
-.promotion{
-    margin: 0;
-}
-.bold{
-    font-weight: bold;
-}
-
-/* Header styles */
-header {
-    background-color: #ffffff;
-    color: #000000;
-    padding: 1rem;
-    border-bottom: 1px solid black;
-}
-
-
-.signin {
-    display: flex;
-    text-align: right;
-    flex-direction: row;
-}
-
-.signin a {
-    background-color: #007bff;
-    color: #fff;
-    padding: 0.5rem 1rem;
-    border-radius: 0.25rem;
-    text-decoration: none;
-}
-
-.signin a:hover {
-    background-color: #0069d9;
-}
-
-/* Main content styles */
-main {
-    margin-top: 5rem;
-    padding: 1rem;
-}
-
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-bottom: 2rem;
-}
-
-article {
-    flex-basis: calc(33.33% - 1rem);
-    background-color: #f5f5f5;
-    padding: 1rem;
-    margin-bottom: 1rem;
-}
-
-article h2 {
-    font-size: 1.2rem;
-    margin: 0 0 0.5rem 0;
-}
-
-article p {
-    margin: 0;
-}
-

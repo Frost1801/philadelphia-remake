@@ -6,7 +6,7 @@ body{
 }
 .inner_main_menu{
     margin: 0 auto;
-    width: 1170px;
+    width: 70%;
 }
 
 .inner_main_menu ul{
@@ -48,13 +48,13 @@ body{
     position: relative;
 }
 .logo{
-    width: 500px;
-    height: 500px;
+    width: 26%;
+    height: auto;
     position: absolute;
     left: 50%;
     top: 0;
     content: "";
-    margin-left: -250px;
+    margin-left: -12.5%;
     padding-top: 0.5em;
     text-align: center;
 }

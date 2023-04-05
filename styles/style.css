@@ -17,7 +17,6 @@ body {
     background-color: #ffffff;
     color: #000000;
     margin-top: 1em;
-    padding-bottom: 0em;
 }
 
 .leftElements{
@@ -44,7 +43,6 @@ body {
     padding-top: 0.5em;
     top: 2.5em;
     width: 26%;
-
 }
 
 .logo img {
@@ -83,50 +81,14 @@ body {
     font-weight: bold;
 }
 
-.icon-wrapper{
-    display: flex;
-    margin: 1em;
-    padding: 0;
-    width: 1%;
-}
-.icon-wrapper img{
-    max-height: 100%;
-    max-width: 100%;
-    float: left;
-}
-
-
 /* Header styles */
 header {
     background-color: #ffffff;
     color: #000000;
-}
-
-nav {
-    flex-basis: 100%;
-    text-align: center;
-    margin: 0;
-    padding: 1em;
+    padding: 1rem;
     border-bottom: 1px solid black;
 }
 
-nav ul {
-    display: inline-block;
-    margin: 0;
-    padding: 0;
-}
-
-nav li {
-    display: inline-block;
-    margin: 0 0.5rem;
-    font-size: 80%;
-    text-transform: uppercase
-}
-
-nav a {
-    color: #333;
-    text-decoration: none;
-}
 
 .signin {
     display: flex;

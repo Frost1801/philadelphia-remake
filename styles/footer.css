@@ -6,12 +6,14 @@ footer {
     left: 0;
     bottom: 0;
     width: 100%;
+    margin-top: auto;
 }
 
 footer a {
     color: #000000;
     font-size: 14px;
     transition-duration: 0.2s;
+    font-weight: 500;
 }
 .copy {
     font-size: 12px;
@@ -28,7 +30,7 @@ footer a {
 ul.social-network {
     list-style: none;
     display: inline;
-    margin-left: 0 !important;
+    margin-left: 0;
     padding: 0;
 }
 
@@ -56,21 +58,17 @@ ul.social-network li {
     text-align: center;
 }
 
-.social-circle i {
-    color: #595959;
-    -webkit-transition: all 0.8s;
-    -moz-transition: all 0.8s;
-    -o-transition: all 0.8s;
-    -ms-transition: all 0.8s;
-    transition: all 0.8s;
-}
-
 .social-network a {
     background-color: #F9F9F9;
 }
 .footer-pad h4{
+    font-size: 100%;
     font-weight: bold;
     text-transform: uppercase;
     border-bottom: 1px solid #dcdcdc;
 
+}
+.lower-footer{
+    width: 100%;
+    background-color: #eee;
 }

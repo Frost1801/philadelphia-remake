@@ -30,7 +30,7 @@ footer a {
 ul.social-network {
     list-style: none;
     display: inline;
-    margin-left: 0;
+    margin-left: 2em;
     padding: 0;
 }
 
@@ -69,6 +69,28 @@ ul.social-network li {
 
 }
 .lower-footer{
+    padding: 1em;
+    display: flex;
+    flex-direction: row;
+    flex-basis: 60%;
+    text-align: center;
+    justify-content: center;
     width: 100%;
     background-color: #eee;
 }
+
+.copyright-container{
+    font-weight: bold;
+    font-size: 80%;
+    flex-direction: column;
+    text-align: left;
+    justify-content: left;
+}
+.copyright-container li{
+    display: inline;
+}
+.copyright-container a{
+    font-weight: bold;
+    font-size: 80%;
+}
+

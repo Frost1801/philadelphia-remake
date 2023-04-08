@@ -85,7 +85,6 @@ header{
 /*Bottone subscribe*/
 #sub-button{
     margin-top: -0.5em;
-    margin-right: 1em;
     padding: 0 2em;
 }
 #subscribe{
@@ -133,12 +132,13 @@ header{
 }
 .navbar{
     margin-left: 0;
-    width: 58%;
+    flex-basis: 50%;
     display: flex;
     flex-wrap: wrap;
     text-align: center;
     justify-content: center;
     list-style-type: none;
+    font-size: 90%;
 
 }
 .navbar a{
@@ -165,6 +165,9 @@ header{
         transition:all .5s ease;
         margin: 0 auto;
         width: 100%;
+    }
+    .navbar{
+        flex-basis: 80%;
     }
     #lower-menu .icons{
         transition:all .5s ease;

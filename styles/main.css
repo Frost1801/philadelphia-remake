@@ -1,5 +1,120 @@
 main{
-    position:relative;
-    padding: 5em;
-    top: 200px;
+    margin-top: 8em;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.three-columns{
+    margin-top:1em;
+}
+
+.flex-row-container {
+    margin-left: 17.5%;
+    width: 65%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: left;
+    border-bottom: 1px solid black;
+}
+.flex-row-container img{
+    display:block;
+    margin:auto;
+    width: 100%;
+}
+
+.flex-row-item {;
+    padding: 0.5em;
+}
+ .main-article{
+     flex-basis: 40%;
+ }
+ .secondary-articles{
+     flex-basis: 35%;
+ }
+
+ .side-articles{
+     flex-basis: 25%;
+
+ }
+ .side-articles p{
+     color: #aaaaaa;
+     border-bottom: 1px solid #dcdcdc;
+ }
+
+.title-top {
+    margin-left: 17.5%;
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+    /*Centra verticalmente gli elementi*/
+    align-items: center;
+    border-top: 2px solid black;
+    margin-top: 1em;
+}
+
+
+.long-article .flex-row-container{
+    justify-content: space-between;
+}
+
+.long-article .left-article{
+    flex-basis: 50%;
+    float: left;
+}
+.long-article .image-article{
+    flex-basis: 30%;
+    float: right;
+}
+
+.the-region {
+    font-weight: bold;
+    font-size: 150%;
+    float: left;
+}
+
+.more {
+    float: right;
+}
+
+.long-article .flex-row-container{
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.four-grid{
+    margin-top: 1em;
+}
+
+.four-grid .small-article{
+    flex-basis: 35%;
+    float: left;
+}
+.four-grid .image-article{
+    flex-basis: 15%;
+    float: right;
+}
+
+.four-row .flex-row-item{
+    flex-basis: 25%;
+}
+
+
+
+
+@media screen and (max-width: 900px) {
+    .container {
+        padding: 0;
+        flex-direction: column;
+    }
+    .main-article {
+        flex-basis: 100%;
+        margin-right: 0;
+    }
+    .secondary-articles {
+        flex-basis: 100%;
+        margin-right: 0;
+    }
+    .side-articles {
+        flex-basis: 100%;
+    }
 }

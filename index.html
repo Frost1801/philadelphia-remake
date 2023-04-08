@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/footer.css">
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/hamburger.css">
     <!--importo la libreria per le icone-->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
@@ -51,7 +52,7 @@
     </div>
     <div id = "lower-menu">
         <div class = "icons">
-            <a href="" class ="icon hamburger"><i class="ri-menu-line"></i></a>
+            <a id = "h-button" class ="icon hamburger" ><i class="ri-menu-line"></i></a>
             <a href="" class = "icon search"><i class="ri-search-line"></i></a></div>
         <ul class = "navbar" style="padding-left: 0">
             <li><a href="#">News</a></li>
@@ -70,6 +71,108 @@
         </ul>
     </div>
 </header>
+
+<!--Hamburger menu-->
+<div class="hamburger-menu" id = "h-menu">
+    <div class="flex-row-container">
+        <div class="flex-row-item">
+            <h3><a href="#">News</a></h3>
+            <p><a href="#">New Jersey</a></p>
+            <p><a href="#">Pennsylvania</a></p>
+            <p><a href="#">Politics</a></p>
+            <p><a href="#">Coronavirus</a></p>
+            <p><a href="#">Nation &amp; World</a></p>
+            <p><a href="#">Education</a></p>
+            <p><a href="#">Photography</a></p>
+            <p><a href="#">Video</a></p>
+            <p><a href="#">Obituaries</a></p>
+
+            <h3><a href="#">Sports</a></h3>
+            <p><a href="#">Gameday Central</a></p>
+            <p><a href="#">Eagles</a></p>
+            <p><a href="#">Phillies</a></p>
+            <p><a href="#">Sixers</a></p>
+            <p><a href="#">Flyers</a></p>
+            <p><a href="#">Union</a></p>
+            <p><a href="#">College Sports</a></p>
+            <p><a href="#">Rally High School Sports</a></p>
+            <p><a href="#">Betting</a></p>
+        </div>
+        <div class="flex-row-item">
+            <h3><a href="#">Business</a></h3>
+            <p><a href="#">Jobs</a></p>
+            <p><a href="#">Economy</a></p>
+            <p><a href="#">Marijuana</a></p>
+            <p><a href="#">PhillyDeals</a></p>
+            <p><a href="#">Small Business</a></p>
+            <p><a href="#">Health &amp; Pharma</a></p>
+            <p><a href="#">Consumer</a></p>
+
+            <h3><a href="#">Entertainment</a></h3>
+            <p><a href="#">Things To Do</a></p>
+            <p><a href="#">Arts &amp; Culture</a></p>
+            <p><a href="#">Movies</a></p>
+            <p><a href="#">TV</a></p>
+            <p><a href="#">Celebrity</a></p>
+            <p><a href="#">Comics</a></p>
+            <p><a href="#">Puzzles</a></p>
+        </div>
+        <div class = flex-row-item>
+            <h3><a href="#">Opinion</a></h3>
+            <p><a href="#">Columnists</a></p>
+            <p><a href="#">Commentary</a></p>
+            <p><a href="#">Editorials</a></p>
+            <p><a href="#">Cartoons</a></p>
+
+            <h3><a href="#">Life</a></h3>
+            <p><a href="#">Sex &amp; Love</a></p>
+            <p><a href="#">Families</a></p>
+            <p><a href="#">Style</a></p>
+            <p><a href="#">The Upside</a></p>
+            <p><a href="#">Home</a></p>
+            <p><a href="#">Travel</a></p>
+
+            <h3><a href="#">Food</a></h3>
+            <h3><a href="#">Health</a></h3>
+            <h3><a href="#">Real Estate</a></h3>
+            <h3><a href="#">El Inquirer</a></h3>
+        </div>
+        <div class="flex-row-item">
+            <h3><a href="#">Your Day</a></h3>
+            <p><a href="#">Today's Paper</a></p>
+            <p><a href="#">Newsletters</a></p>
+            <p><a href="#">Weather</a></p>
+            <p><a href="#">Horoscope</a></p>
+            <p><a href="#">Lottery</a></p>
+            <p><a href="#">Inquirer Live</a></p>
+
+            <h3><a href="#">Marketplace</a></h3>
+            <p><a href="#">Inquirer Store</a></p>
+            <p><a href="#">Gift Subscriptions</a></p>
+            <p><a href="#">Job Listings</a></p>
+            <p><a href="#">All Classifieds</a></p>
+            <p><a href="#">Legal Notices</a></p>
+        </div>
+        <div class="flex-row-item">
+            <h3><a href="#">People</a></h3>
+            <p><a href="#">Births</a></p>
+            <p><a href="#">Celebrations</a></p>
+            <p><a href="#">Engagements</a></p>
+            <p><a href="#">Obituaries</a></p>
+            <p><a href="#">Death Notices</a></p>
+
+            <h3><a href="#">Get In Touch</a></h3>
+            <p><a href="#">Advertise</a></p>
+            <p><a href="#">Contact Us</a></p>
+            <p><a href="#">About The Inquirer</a></p>
+            <p><a href="#">Diversity &amp; Inclusion</a></p>
+            <p><a href="#">Jobs &amp; Internships</a></p>
+            <p><a href="#">Newsroom Staff</a></p>
+            <p><a href="#">Permissions</a></p>
+            <p><a href="#">Reprints</a></p>
+        </div>
+    </div>
+</div>
 
 <!--MAIN WEBSITE CONTENT-->
 
@@ -97,14 +200,14 @@
                     <p><a href="#">One common problem you'll face as a web developer is how to place an element at the center
                         of a page or within an element acting as its container. It's the ubiquitous
                         "How do I center a div?" problem.</a></p>
-                   <p ><a href="#" class = "author">Oshye Teo</a></p>
+                    <p ><a href="#" class = "author">Oshye Teo</a></p>
                 </div>
                 <div class="article no-border">
                     <img src="img/superMario.png">
                     <h3><a href="#">Box Office: ‘Super Mario Bros.’ Heading for Huge $195M-Plus Five-Day Opening</a></h3>
                     <p><a href="#">Illumination and Universal’s Nintendo video game adaptation The Super Mario Bros. Movie is on course to secure an estimated $55 million to $59 million at
                         the Friday box office for a five-day domestic debut of $195 million or more, well ahead of expectations.</a></p>
-                   <p ><a href="#" class = "author">Thomas Waterdrinker</a></p>
+                    <p ><a href="#" class = "author">Thomas Waterdrinker</a></p>
                 </div>
             </div>
             <div class="flex-row-item side-articles">
@@ -150,7 +253,7 @@
                 <p><a href="#">For years, Meta has pushed a rosy vision about the future of human communication in which people — represented by a diverse slate of avatars —
                     work, play and shop together in immersive digital worlds accessible through virtual reality-powered devices.
                     What the company hasn’t said is that it’s paying exorbitant salaries to programmers to turn that vision into a reality. </a></p>
-               <p ><a href="#" class = "author">Adrian Firiedel</a></p>
+                <p ><a href="#" class = "author">Adrian Firiedel</a></p>
             </div>
             <div class="flex-row-item image-article">
                 <img src="img/meta.webp">
@@ -163,7 +266,7 @@
                 <h3><a href="#">Rickrolling, history behind the viral meme</a></h3>
                 <p><a href="#">Rickrolling or a Rickroll is an internet meme involving the unexpected appearance of the music video for the 1987 song "Never Gonna Give You Up",
                     performed by English singer Rick Astley.The aforementioned video has over 1 billion views on YouTube.</a></p>
-               <p ><a href="#" class = "author">Armand Korscarel</a></p>
+                <p ><a href="#" class = "author">Armand Korscarel</a></p>
             </div>
             <div class="flex-row-item image-article">
                 <img src="img/rickroll.jpg">
@@ -174,7 +277,7 @@
                     The movie, which takes place in the world of the iconic role-playing game, follows a group of adventurers played by an ensemble cast including Chris Pine,
                     Michelle Rodriguez, Regé-Jean Page, Justice Smith, and Sophia Lillis.
                 </a></p>
-               <p ><a href="#" class = "author">Mike Kievich</a></p>
+                <p ><a href="#" class = "author">Mike Kievich</a></p>
             </div>
             <div class="flex-row-item image-article">
                 <img src="img/dnd.avif">
@@ -185,7 +288,7 @@
                 <h3><a href="#">Applied Electronics, the easiest exam becomes even easier</a></h3>
                 <p><a href="#">Regarding why Applied Electronics may be considered an easier subject in the UNIFI exam, it could be due to various factors such as the complexity of the topics covered,
                     the difficulty level of the exam questions, and the student's prior knowledge and preparation. .</a></p>
-               <p ><a href="#" class = "author">Andrew Torrin</a></p>
+                <p ><a href="#" class = "author">Andrew Torrin</a></p>
             </div>
             <div class="flex-row-item image-article">
                 <img src="img/electronics.jpg">
@@ -194,7 +297,7 @@
                 <h3><a href="#">Linux Operating System Market Share | Business till 2030</a></h3>
                 <p><a href="#">“Linux Operating System Market” Are a Collection of Information and Analysis Obtained From Diverse Sources to Aid Businesses in
                     Comprehending the Present Market Situation.These Insights Enable Them to Make Informed Decisions and Create Efficacious Growth Strategies.</a></p>
-               <p ><a href="#" class = "author">Sergio Cibecchini</a></p>
+                <p ><a href="#" class = "author">Sergio Cibecchini</a></p>
             </div>
             <div class="flex-row-item image-article">
                 <img src="img/linux.jpeg">
@@ -308,25 +411,25 @@
                         </ul>
                     </div>
                 </div>
-<!--                Column 4-->
+                <!--                Column 4-->
                 <div class="col-md-3">
                     <div class="footer-pad">
-                    <h4>E-Editions</h4>
+                        <h4>E-Editions</h4>
                         <ul class="list-unstyled">
                             <li><a href="#">The Inquirer</a></li>
                             <li><a href="#">The Daily News</a></li>
                         </ul>
-                    <h4>Mobile Apps</h4>
+                        <h4>Mobile Apps</h4>
                         <ul class="list-unstyled">
                             <li><a href="#">Apple iOS</a></li>
                             <li><a href="#">Google Android</a></li>
                         </ul>
                     </div>
-            </div>
+                </div>
 
-        </div>
+            </div>
             <!--                Lower part of footer-->
-    </div>
+        </div>
         <div >
             <div class="lower-footer">
                 <div class = "copyright-container">
@@ -352,6 +455,6 @@
     </div>
 </footer>
 
-
+<script src="scripts/scripts.js"></script>
 </body>
 </html>

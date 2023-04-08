@@ -26,10 +26,28 @@ main{
     color: #222;!important;
 }
 
-
 .article p a{
+    text-decoration: none;
     color: #595760
 }
+
+.article h2 a{
+    text-decoration: none;
+}
+.article h3 a {
+    text-decoration: none;
+}
+
+.article h2 a:hover{
+    color: #1a6aff
+}
+.article h3 a:hover{
+    color: #1a6aff
+}
+.article p a:hover{
+    color: #1a6aff
+}
+
 
 .article h2{
     font-weight: bold;
@@ -134,6 +152,10 @@ main{
 .no-border{
     border-bottom: none;
 }
+.title-top i{
+    color: #1a6aff;
+}
+
 
 @media screen and (max-width: 900px) {
     .container {

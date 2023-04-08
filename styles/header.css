@@ -10,6 +10,7 @@ body{
     display: flex;
     flex-direction: column;
 }
+
 header{
     background-color: white;
     position: absolute;
@@ -40,7 +41,7 @@ header{
 .inner_main_menu ul li:nth-child(2){
     text-align: center;
     float: right;
-    background-color: rgb(176, 204, 221);
+    background-color: #277da1;
 }
 /*bottone sign in*/
 .inner_main_menu ul li:nth-child(3){
@@ -87,6 +88,12 @@ header{
     margin-top: -0.5em;
     padding: 0 2em;
 }
+#sub-button a{
+    color: white;
+    text-decoration: none;
+    font-size: 90%;
+}
+
 #subscribe{
     font-weight: bold;
     margin-bottom: -0.5em;
@@ -106,7 +113,7 @@ header{
     background-color: white;
     position: fixed;
     width: 100%;
-    top: 4em;
+    top: 3.5em;
     right: 0;
     padding: 0;
     box-sizing: border-box;

@@ -67,10 +67,10 @@ header{
     width: 26%;
     height: auto;
     position: absolute;
-    left: 49%;
+    left: 50%;
+    transform: translate(-50%, 0);
     top: 0;
     content: "";
-    margin-left: -12.5%;
     padding-top: 0.5em;
     text-align: center;
 }
@@ -106,8 +106,6 @@ header{
     text-decoration-line: underline;
     text-decoration-thickness: 1px;
 }
-
-
 
 /*Lower menu*/
 
@@ -208,13 +206,18 @@ header{
     .logo{
         margin-top: 0.5em;
     }
+    .icons{
+        margin-top: -0.5em;
+    }
 
 }
 
-@media screen and (max-width: 900px){
-
+@media screen and (max-width: 700px){
+    .logo{
+        margin-top: 0.25em;
+        width:50%
+    }
 }
-
 
 
 

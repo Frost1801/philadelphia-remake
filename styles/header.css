@@ -61,6 +61,7 @@ header{
     background-color: white;
     position: fixed;
     z-index: 1;
+    padding-bottom: 1em;
 }
 .logo{
     width: 26%;
@@ -72,7 +73,6 @@ header{
     margin-left: -12.5%;
     padding-top: 0.5em;
     text-align: center;
-    z-index: 1;
 }
 #today-paper{
     font-weight: bold;
@@ -81,12 +81,14 @@ header{
 
 .left-elements{
     font-size: 80%;
+    padding-left: 0.5em;
 }
 
 /*Bottone subscribe*/
 #sub-button{
     margin-top: -0.5em;
     padding: 0 2em;
+    margin-right: 1em;
 }
 #sub-button a{
     color: white;
@@ -113,7 +115,7 @@ header{
     background-color: white;
     position: fixed;
     width: 100%;
-    top: 3.5em;
+    top: 4.5em;
     right: 0;
     padding: 0;
     box-sizing: border-box;
@@ -139,7 +141,7 @@ header{
 }
 .navbar{
     margin-left: 0;
-    flex-basis: 50%;
+    flex-basis: 55%;
     display: flex;
     flex-wrap: wrap;
     text-align: center;
@@ -167,7 +169,7 @@ header{
 
 
 /*Quando lo screen viene aggiornato la barra prende l'intera grandezza*/
-@media screen and (max-width: 1400px){
+@media screen and (max-width: 1610px){
     .inner_main_menu{
         transition:all .5s ease;
         margin: 0 auto;
@@ -181,5 +183,38 @@ header{
         left: 0;
     }
 }
+@media screen and (max-width: 1150px){
+    #sub-button{
+        display: none;
+    }
+    #signin{
+        margin-top: -0.5em;
+        margin-right: 0.5em;
+    }
+    #lower-menu{
+        z-index: 1;
+        top: 1.5em;
+        background-color: transparent;
+    }
+    #main_menu{
+        padding-bottom: 0.5em;
+    }
+    .navbar a{
+        display: none;
+    }
+    .left-elements div{
+        display: none;
+    }
+    .logo{
+        margin-top: 0.5em;
+    }
+
+}
+
+@media screen and (max-width: 900px){
+
+}
+
+
 
 

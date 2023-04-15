@@ -1,12 +1,12 @@
 let hamb = document.getElementById("h-button");
-let activHamburger = false;
+let activeHamburger = false;
 hamb.addEventListener("click", function() {
-    if (!activHamburger){
+    if (!activeHamburger){
         document.getElementById("h-menu").style.display = "block";
-        activHamburger = true;
+        activeHamburger = true;
     }
     else {
         document.getElementById("h-menu").style.display = "none";
-        activHamburger = false;
+        activeHamburger = false;
     }
 });

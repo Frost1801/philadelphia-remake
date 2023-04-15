@@ -10,7 +10,6 @@ body{
     display: flex;
     flex-direction: column;
 }
-
 header{
     background-color: white;
     position: absolute;
@@ -164,6 +163,9 @@ header{
     padding: 0 1em 1em;
     left: 17%;
 }
+#h-button:hover{
+    cursor: pointer;
+}
 
 
 /*Quando lo screen viene aggiornato la barra prende l'intera grandezza*/
@@ -210,9 +212,6 @@ header{
         margin-top: -0.5em;
     }
 
-}
-#h-button:hover{
-    cursor: pointer;
 }
 
 @media screen and (max-width: 700px){

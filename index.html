@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles/footer.css">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/dropdown.css">
+    <link rel="stylesheet" href="styles/searchbar.css">
     <!--importo la libreria per le icone-->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
@@ -45,7 +46,7 @@
                         <div>4 weeks for 99¢</div>
                     </a>
                 </li>
-                <li id = "signin"><a href="" >SIGN IN</a></li>
+                <li id = "signin"><a href="" class="sign-in-butt">SIGN IN</a></li>
 
             </ul>
         </div>
@@ -58,7 +59,7 @@
                     <span></span>
                 </label>
             </div>
-            <a href="" class = "icon search"><i class="ri-search-line"></i></a></div>
+            <a id = "eyeglass" class = "icon search" ><i class="ri-search-line"></i></a></div>
         <ul class = "navbar" style="padding-left: 0">
             <li><a href="#">News</a></li>
             <li><a href="#">Sports</a></li>
@@ -78,7 +79,7 @@
 </header>
 
 <!--Hamburger menu-->
-<div class="hamburger-menu" id = "h-menu">
+<div class="hamburger-menu" id ="d-menu">
     <div class="flex-row-container">
         <div class="flex-row-item">
             <h3><a href="#">News</a></h3>
@@ -176,6 +177,18 @@
             <p><a href="#">Permissions</a></p>
             <p><a href="#">Reprints</a></p>
         </div>
+    </div>
+</div>
+
+<!--SEARCH BAR-->
+<div id = search-bar>
+    <div class = "search-elements">
+        <form role="search" id="search-form">
+            <label id = "search-label">
+                <input type="search" placeholder="Search" id="search">
+            </label>
+            <button type="submit" id = "search-button"><i class="fa fa-search"></i></button>
+        </form>
     </div>
 </div>
 

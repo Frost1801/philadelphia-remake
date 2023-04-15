@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/footer.css">
     <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/hamburger.css">
+    <link rel="stylesheet" href="styles/dropdown.css">
     <!--importo la libreria per le icone-->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
@@ -52,7 +52,12 @@
     </div>
     <div id = "lower-menu">
         <div class = "icons">
-            <a id = "h-button" class ="icon hamburger" ><i class="ri-menu-line"></i></a>
+            <div class="animated-buger icon hamburger">
+                <input id="h-button" type="checkbox" />
+                <label class="menu__btn" for="h-button">
+                    <span></span>
+                </label>
+            </div>
             <a href="" class = "icon search"><i class="ri-search-line"></i></a></div>
         <ul class = "navbar" style="padding-left: 0">
             <li><a href="#">News</a></li>

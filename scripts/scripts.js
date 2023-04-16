@@ -1,7 +1,24 @@
 let hamb = document.getElementById("h-button");
 let search = document.getElementById("eyeglass");
+let date = document.getElementById("date");
 let activeHamburger = false;
 let activeSearchbar = false;
+
+window.onload = function() {
+    let today = new Date();
+    let daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    let monthsOfYear = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+    let day = daysOfWeek[today.getDay()];
+    let month = monthsOfYear[today.getMonth()];
+    let date = today.getDate();
+    let year = today.getFullYear();
+
+    let dateString = day + ", " + month + " " + date + ", " + year;
+
+    document.getElementById("date").innerHTML = dateString;
+}
+
 
 hamb.addEventListener("click", function() {
     if (!activeHamburger){

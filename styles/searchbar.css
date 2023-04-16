@@ -6,7 +6,7 @@
     height: 62px;
     top: 8em;
     background-color: white;
-    left: 340px;
+    left: 20%;
     justify-content: center;
     align-items: center;
     box-shadow: 0 2px 16px 0 rgba(0, 0, 0, .1);
@@ -52,4 +52,36 @@ button[type="submit"] {
 }
 #eyeglass{
     cursor: pointer;
+}
+@media screen and (max-width: 1610px){
+    #search-bar{
+        transition:all .5s ease;
+        left: 2em;
+    }
+
+}
+@media screen and (max-width: 1150px){
+    #search-bar{
+        top: 3.6em;
+        transition:none;
+        box-shadow: 0 2px 16px 0 rgba(0,0,0,.1);
+    }
+
+}
+
+@media screen and (max-width: 900px){
+    #search-bar{
+        width: 100%;
+        left: 0;
+    }
+    #search{
+        width: 80%;
+    }
+    #search-label{
+        width: 100%;
+    }
+    #search-button{
+        margin-right: 1em;
+    }
+
 }

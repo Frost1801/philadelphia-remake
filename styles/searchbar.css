@@ -1,7 +1,7 @@
 #search-bar {
     display: none;
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     width: 570px;
     height: 62px;
     top: 8em;

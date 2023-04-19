@@ -62,7 +62,7 @@ header{
     padding-bottom: 1em;
 }
 .logo{
-    width: 26%;
+    width: 500px;
     height: auto;
     position: absolute;
     left: 50%;
@@ -214,7 +214,9 @@ header{
     content: '';
     top: 5px;
 }
-
+#logo-mobile{
+    display: none;
+}
 
 /*Quando lo screen viene aggiornato la barra prende l'intera grandezza*/
 @media screen and (max-width: 1610px){
@@ -256,7 +258,7 @@ header{
         display: none;
     }
     .logo{
-        width:35%;
+        width:350px;
         margin-top: 0;
     }
     .icons{
@@ -268,7 +270,13 @@ header{
 @media screen and (max-width: 700px){
     .logo{
         margin-top: 0.25em;
-        width:50%
+        width:140px;
+    }
+    #logo-standard{
+        display: none;
+    }
+    #logo-mobile{
+        display: block;
     }
 }
 

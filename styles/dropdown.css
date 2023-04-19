@@ -15,6 +15,10 @@
     height: 65%;
 }
 
+.hamburger-menu a{
+    color: black;
+}
+
 .hamburger-menu .flex-row-container{
     width: 100%;
     font-size: 100%;

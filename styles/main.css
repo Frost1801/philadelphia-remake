@@ -8,6 +8,10 @@ main{
     margin-top:1em;
 }
 
+main a {
+    color: black;
+}
+
 .flex-row-container {
     margin-left: 17.5%;
     width: 65%;

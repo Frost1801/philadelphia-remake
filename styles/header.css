@@ -6,7 +6,6 @@ body{
     font-family: Arial,Helvetica,sans-serif;
     text-decoration: none;
     min-height: 200vh;
-    transition:all .5s ease;
     display: flex;
     flex-direction: column;
 }
@@ -111,7 +110,7 @@ header{
 
 /*Lower menu*/
 
-#lower-menu{
+.lower-menu{
     background-color: white;
     position: fixed;
     width: 100%;
@@ -126,16 +125,16 @@ header{
     z-index:2;
 }
 
-#lower-menu .icon{
+.lower-menu .icon{
     text-decoration: none;
     display: flex;
     align-items: center;
 }
-#lower-menu .hamburger{
+.lower-menu .hamburger{
     margin-right: 1em;
     display: none;
 }
-#lower-menu .icon{
+.lower-menu .icon{
     display: flex;
     align-items: center;
 }
@@ -156,9 +155,8 @@ header{
     text-transform: uppercase;
     padding: 0.5em;
     text-decoration: none;
-    transition:all .5s ease;
 }
-#lower-menu .icons{
+.lower-menu .icons{
     display: flex;
     position: fixed;
     align-items: center;
@@ -221,15 +219,13 @@ header{
 /*Quando lo screen viene aggiornato la barra prende l'intera grandezza*/
 @media screen and (max-width: 1610px){
     .inner_main_menu{
-        transition:all .5s ease;
         margin: 0 auto;
         width: 100%;
     }
     .navbar{
         flex-basis: 80%;
     }
-    #lower-menu .icons{
-        transition:all .5s ease;
+    .lower-menu .icons{
         left: 0;
         padding-left: 0;
     }
@@ -245,7 +241,7 @@ header{
         margin-top: -0.5em;
         margin-right: 0.5em;
     }
-    #lower-menu{
+    .lower-menu{
         z-index:2;
         top: 1.5em;
         background-color: transparent;
@@ -260,7 +256,8 @@ header{
         display: none;
     }
     .logo{
-        margin-top: 0.5em;
+        width:35%;
+        margin-top: 0;
     }
     .icons{
         margin-top: -0.5em;

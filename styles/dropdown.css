@@ -18,7 +18,10 @@
 .hamburger-menu a{
     color: black;
 }
-
+.hamburger-menu a:hover{
+    color: #1a6aff;
+    transition: all 0.1s ease;
+}
 .hamburger-menu .flex-row-container{
     width: 100%;
     font-size: 100%;

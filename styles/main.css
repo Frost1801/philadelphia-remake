@@ -43,13 +43,16 @@ main a {
 }
 
 .article h2 a:hover{
-    color: #1a6aff
+    color: #1a6aff;
+    transition: all 0.1s ease;
 }
 .article h3 a:hover{
-    color: #1a6aff
+    color: #1a6aff;
+    transition: all 0.1s ease;
 }
 .article p a:hover{
-    color: #1a6aff
+    color: #1a6aff;
+    transition: all 0.1s ease;
 }
 
 

@@ -138,6 +138,18 @@ header{
     display: flex;
     align-items: center;
 }
+.lower-menu a:hover{
+    color: #1a6aff;
+    transition: all 0.1s ease;
+}
+
+#main_menu a:hover{
+    color: #1a6aff;
+    transition: all 0.1s ease;
+}
+#sub-button a:hover{
+    color: white;
+}
 .navbar{
     margin-left: 0;
     flex-basis: 55%;

@@ -97,3 +97,8 @@ ul.social-network li {
     font-size: 80%;
 }
 
+.mainfooter a:hover{
+    color: #1a6aff;
+    transition: all 0.1s ease;
+
+}

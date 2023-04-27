@@ -26,8 +26,18 @@ main a {
     border-bottom: 1px solid #dcdcdc;
 }
 
+.four-grid .flex-row-container .article{
+    border-bottom: none;
+}
+
+.four-grid .flex-row-container{
+    border-bottom: 1px solid #dcdcdc;
+}
 .article p .author{
     color: #222;!important;
+}
+.four-grid .no-border{
+    border-bottom: none; !important;
 }
 
 .article p a{
